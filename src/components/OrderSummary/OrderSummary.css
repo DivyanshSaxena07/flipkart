@@ -1,0 +1,121 @@
+.order-summary-page {
+  padding: 10px;
+  font-family: Arial;
+  background: #fff;
+}
+
+.summary-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-btn {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Steps */
+.steps {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.step {
+  text-align: center;
+}
+
+.circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completed .circle {
+  background: #2874f0;
+  color: #fff;
+  border-color: #2874f0;
+}
+
+.active .circle,
+.active-num {
+  border-color: #2874f0;
+  color: #2874f0;
+  font-weight: bold;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background: #ccc;
+}
+
+.line.active {
+  background: #2874f0;
+}
+
+/* Delivered Box */
+.delivered-box {
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* Product Row */
+.product-row {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  gap: 10px;
+}
+
+.summary-img {
+  width: 80px;
+  border-radius: 8px;
+}
+
+/* Price Details */
+.price-box {
+  padding: 10px;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 7px 0;
+}
+
+.green {
+  color: green;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.total-price {
+  font-size: 18px;
+}
+
+.save-msg {
+  color: green;
+  margin-top: 10px;
+}
+
+/* Button */
+.continue-btn {
+  width: 100%;
+  padding: 15px;
+  background: #f7b600;
+  color: #000;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+}

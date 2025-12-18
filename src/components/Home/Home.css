@@ -1,0 +1,404 @@
+/* Home.css - flipkart-ish layout (pure CSS) */
+:root {
+  --blue: #2874f0;
+  --light: #f1f3f6;
+  --card-bg: #fff;
+  --muted: #6b7280;
+  --accent: #ff6f00;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  background: var(--light);
+  color: #111;
+}
+
+.home-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+.blue-header {
+  background: linear-gradient(90deg, var(--blue), #1b63d6);
+  color: white;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.header-inner {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* === Flipkart Logo === */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 8px;
+}
+
+/* image size for desktop */
+.flipkart-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* a subtle hover effect */
+.flipkart-logo:hover {
+  transform: scale(1.05);
+}
+
+/* adjust for tablets */
+@media (max-width: 992px) {
+  .flipkart-logo {
+    height: 32px;
+  }
+}
+
+/* adjust for mobile */
+@media (max-width: 600px) {
+  .flipkart-logo {
+    height: 35px;
+  }
+}
+
+/* in case you want some spacing around logo area */
+.header-inner .logo {
+  margin-right: 20px;
+}
+
+
+.logo-k {
+  background: #fff;
+  color: var(--blue);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-weight: 800;
+}
+
+/* search */
+.search-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 4px 0 0 4px;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-btn {
+  padding: 10px 14px;
+  border-radius: 0 4px 4px 0;
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* header actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.signin-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cart-link {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 20px;
+}
+
+.cart-count {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  background: #ff3b30;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* main content */
+.main-content {
+  width: 92%;
+  max-width: 1200px;
+  margin: 18px auto 48px;
+  display: block;
+}
+
+/* categories */
+.categories-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+  overflow-x: auto;
+}
+
+.cat {
+  background: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  min-width: 110px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* banner */
+.banner {
+  background: linear-gradient(90deg, #fff, #f8fafc);
+  display: flex;
+  gap: 20px;
+  padding: 18px;
+  border-radius: 8px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.full-banner {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.full-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.banner-left {
+  flex: 1;
+}
+
+.banner-left h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #111;
+}
+
+.banner-left p {
+  color: var(--muted);
+  margin: 8px 0;
+}
+
+.shop-now {
+  background: var(--blue);
+  color: white;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.banner-right img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* deals */
+.deals {
+  display: flex;
+  gap: 20px;
+  margin: 18px 0;
+  align-items: center;
+}
+
+.deals-left {
+  background: var(--card-bg);
+  padding: 15px 13px;   /* reduced padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  flex: unset;          /* 🔥 remove fixed size */
+}
+
+
+.deals-left h3 {
+  margin: 0;
+}
+
+.deals-left p {
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+.countdown {
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--accent);
+}
+
+.deals-right {
+  flex: 1;
+}
+
+.mini-grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* products section */
+.products-section {
+  margin-top: 8px;
+}
+
+.section-title {
+  margin: 6px 0 12px;
+  font-size: 18px;
+  color: #111;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* footer */
+.site-footer {
+  background: #f8fafc;
+  padding: 20px;
+  text-align: center;
+  color: var(--muted);
+  margin-top: auto;
+  border-top: 1px solid #eaeef6;
+}
+
+/* ===========================
+   RESPONSIVENESS
+   =========================== */
+
+/* Mobile */
+@media (max-width: 600px) {
+  .header-inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .search-wrap {
+    flex-basis: 100%;
+    order: 3;
+    margin-top: 8px;
+  }
+
+  .header-actions {
+    order: 2;
+  }
+
+  .categories-row {
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .banner-right img {
+    width: 100%;
+    height: auto;
+  }
+
+  .deals {
+    flex-direction: column;
+    margin: 0px 0;
+    gap: 2px;
+  }
+
+  .deals-left {
+    width: 100%;
+  }
+
+  .mini-grid {
+    justify-content: center;
+  }
+
+  /* ✅ 2 products per row on mobile */
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 879px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .banner-right img {
+    width: 260px;
+    height: 160px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 880px) {
+  .cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .banner-right img {
+    width: 320px;
+    height: 180px;
+  }
+
+  .search-input {
+    font-size: 15px;
+  }
+
+  .deals {
+    align-items: flex-start;
+  }
+}

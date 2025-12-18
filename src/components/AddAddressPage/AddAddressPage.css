@@ -1,0 +1,148 @@
+/* Flipkart Blue Header */
+*{
+  margin: 0%;
+  padding: 0%;
+}
+.fk-header {
+  width: 100%;
+  left: 0;
+  background: #2874f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 8px;
+  gap: 14px;
+}
+
+.fk-left {
+  display: flex;
+  align-items: center;
+}
+
+.fk-logo {
+  height: 24px;
+}
+
+.fk-search {
+  flex: 1;
+}
+
+.fk-search input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.fk-icons {
+  display: flex;
+  gap: 16px;
+  color: #fff;
+  font-size: 18px;
+}
+
+
+.address-page {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.address-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.back-arrow {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.address-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Steps Bar */
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.active-circle {
+  border-color: #2874f0;
+  background: #2874f0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.steps p {
+  font-size: 12px;
+  color: #555;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background: #ccc;
+}
+
+/* Form */
+.address-form input,
+.address-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.city-state-row {
+  display: flex;
+  gap: 10px;
+}
+
+.address-form select {
+  background: #fff;
+}
+
+/* Save Button */
+.save-btn {
+  width: 100%;
+  padding: 14px;
+  background: #ff6b00;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight:600;
+  margin-top: 10px;
+}
