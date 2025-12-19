@@ -227,7 +227,7 @@ export default class Home extends Component {
         </main>
 
         <footer className="site-footer">
-          <p>© {new Date().getFullYear()} Flipkart — All rights reserved © 2026 Flipkart LLC</p>
+          <p>© {new Date().getFullYear()} Flipkart LLC — All rights reserved</p>
         </footer>
       </div>
     );
