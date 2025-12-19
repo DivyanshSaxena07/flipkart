@@ -150,6 +150,14 @@ const dummyProducts = [
 
     sold: 20000,
   },
+  {
+          id: 7,
+          title: "boAt Wave Aura",
+          description: "Smartwatch with 1.96, HD Display, 100+ Sports Modes, Functional Crown, Advanced BT Calling",
+          price: 199,
+          mrp: 2999,
+         imageurls: ["/boat1.webp", "/boat2.webp", "/boat3.webp", "/boat4.webp", "/boat5.webp", "/boat6.webp"],
+        },
 ];
 
 const ProductPage = () => {

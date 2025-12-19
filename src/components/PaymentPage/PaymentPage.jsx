@@ -137,9 +137,22 @@ alert("Scan QR Code and make payment first");
       </div>
 
       {/* Offer Banner */}
-      <div className="upi-banner">
+      {/* <div className="upi-banner">
         🎉 Get up to <b>80% Discount</b> on UPI Payments 🎉
-      </div>
+      </div> */}
+
+
+<div className="trust-banner">
+  <div className="trust-content">
+    <p className="trust-title">
+      <span className="trust-icon">✅</span>
+      <span>You are paying to our</span>
+    </p>
+    <p className="trust-highlight">FLIPKART AUTHORIZED SELLER</p>
+  </div>
+</div>
+
+
 
       {/* QR Code Container */}
       <div className="qr-container">

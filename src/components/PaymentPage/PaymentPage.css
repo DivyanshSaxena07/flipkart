@@ -267,3 +267,45 @@
   border-radius: 6px;
   font-size: 18px;
 }
+
+/* Trust Banner */
+.trust-banner {
+  margin: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #d1e5ff, #d3e2fc);
+  border: 1px solid #2874f0;
+  text-align: center;
+}
+
+/* Content wrapper */
+.trust-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icon */
+.trust-icon {
+  font-size: 22px;
+  margin-right: 4px;
+}
+
+/* First line */
+.trust-title {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2874f0;
+  margin: 0;
+}
+
+/* Second line (main highlight) */
+.trust-highlight {
+  margin-top: 1px;
+  font-size: 20px;
+  font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.5px;
+  color: #4187f7;
+}

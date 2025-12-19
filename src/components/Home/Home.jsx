@@ -27,6 +27,15 @@ export default class Home extends Component {
           mrp: 2995,
           imageurl: "one1.webp",
         },
+        {
+          id: 7,
+          title: "boAt Wave Aura",
+          description: "Smartwatch with 1.96, HD Display, 100+ Sports Modes, Functional Crown, Advanced BT Calling",
+          price: 199,
+          mrp: 2999,
+          imageurl:
+            "boat1.webp",
+        },
 
          {id: 1,
           title: "boAt Rockerz Plus 550",
@@ -63,6 +72,7 @@ export default class Home extends Component {
           imageurl:
             "p1.webp",
         },
+        
       ],
       // countdown target (example: 6 hours from now)
       timeLeft: this.computeInitialTimeLeft(6 * 60 * 60), // seconds
