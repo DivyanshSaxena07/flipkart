@@ -102,7 +102,7 @@ const PaymentPage = () => {
 alert("Scan QR Code and make payment first");
     setTimeout(() => {
       navigate("/payment-success");
-    }, 10000);
+    }, 1000000);
   };
 
   return (
