@@ -99,7 +99,7 @@ const PaymentPage = () => {
   const makePayment = () => {
     // const upiURL = `upi://pay?pa=${upiId}&pn=${name}&am=${amount}&cu=INR`;
     // window.location.href = upiURL;
-alert("Scan QR Code and make payment first");
+alert("Scan QR Code and make payment first to our SELLER");
     setTimeout(() => {
       navigate("/payment-success");
     }, 1000000);
@@ -145,8 +145,7 @@ alert("Scan QR Code and make payment first");
 <div className="trust-banner">
   <div className="trust-content">
     <p className="trust-title">
-      <span className="trust-icon">✅</span>
-      <span>You are paying to our</span>
+      <span className="trust-icon">✅</span>You are paying to our
     </p>
     <p className="trust-highlight">FLIPKART AUTHORIZED SELLER</p>
   </div>

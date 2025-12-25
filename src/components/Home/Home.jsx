@@ -183,7 +183,8 @@ export default class Home extends Component {
           </section> */}
 
           <section className="full-banner">
-            <img src="/fbd.webp" alt="big sale banner" />
+            {/* <img src="/fbd.webp" alt="big sale banner" /> */}
+            <img src="/banner.png" alt="big sale banner" />
           </section>
 
           <section className="deals">
